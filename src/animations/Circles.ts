@@ -1,16 +1,8 @@
-﻿import { ICircleOptions, IAnimation } from "../types";
+﻿import { ICircleOptions, IAnimation, IHasCount, IHasFrequency, IHasDiameter } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
 
-
-/**
- * @source
- */
-interface ICirclesOptions extends ICircleOptions {
-    count?: number;
-    diameter?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-}
+export interface ICirclesOptions extends ICircleOptions, IHasCount, IHasFrequency, IHasDiameter {}
 
 /** 
  * These are the options for the Circles animation [[ICirclesOptions]]

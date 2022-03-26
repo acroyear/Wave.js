@@ -1,17 +1,6 @@
-﻿import { IPolygonOptions, IAnimation } from "../types";
+﻿import { IGlobOptions, IAnimation } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
-
-
-/**
- * @source
- */
-interface IGlobOptions extends IPolygonOptions {
-    count?: number;
-    diameter?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-    mirroredX?: boolean;
-}
 
 /** 
  * These are the options for the Glob animation [[IGlobOptions]]

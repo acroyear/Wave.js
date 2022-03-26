@@ -1,22 +1,6 @@
-﻿import { IPolygonOptions, IAnimation } from "../types";
+﻿import { IWaveOptions, IAnimation } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
-
-
-/**
- * @source
- */
-interface IWaveOptions extends IPolygonOptions {
-    count?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-    top?: boolean;
-    right?: boolean;
-    bottom?: boolean;
-    left?: boolean;
-    center?: boolean;
-    mirroredX?: boolean;
-    mirroredY?: boolean;
-}
 
 /** 
  * These are the options for the Wave animation [[IWaveOptions]]

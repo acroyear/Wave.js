@@ -1,28 +1,12 @@
-﻿import { IRectangleOptions, IAnimation } from "../types";
+﻿import {IAnimation, IHasCount, IHasCubes, IHasFrequency, IHasGap, IHasLocation, IRectangleOptions } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
-
-
-/**
- * @source
- */
-interface ICubesOptions extends IRectangleOptions {
-    count?: number;
-    cubeHeight?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-    gap?: number;
-    top?: boolean;
-    right?: boolean;
-    bottom?: boolean;
-    left?: boolean;
-    center?: boolean;
-    mirroredX?: boolean;
-    mirroredY?: boolean;
-}
 
 /** 
  * These are the options for the Cubes animation [[ICubesOptions]]
  */
+export interface ICubesOptions extends IRectangleOptions, IHasLocation, IHasFrequency, IHasCount, IHasGap, IHasCubes {}
+
 export class Cubes implements IAnimation {
     private _options: ICubesOptions;
 

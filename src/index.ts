@@ -1,8 +1,8 @@
 import { IAnimation } from "./types"
-import { Arcs } from "./animations/Arcs";
-import { Circles } from "./animations/Circles";
-import { Cubes } from "./animations/Cubes";
-import { Flower } from "./animations/Flower";
+import { Arcs, IArcsOptions } from "./animations/Arcs";
+import { Circles, ICirclesOptions } from "./animations/Circles";
+import { Cubes, ICubesOptions } from "./animations/Cubes";
+import { Flower, IFlowerOptions } from "./animations/Flower";
 import { Glob } from "./animations/Glob";
 import { Lines } from "./animations/Lines";
 import { Shine } from "./animations/Shine";
@@ -10,6 +10,8 @@ import { Square } from "./animations/Square";
 import { Turntable } from "./animations/Turntable";
 import { Wave as WaveAnimation } from "./animations/Wave";
 
+import { IGlobOptions, ILinesOptions, IShineOptions, ISquareOptions, ITurntableOptions, IWaveOptions } from "./types";
+export { IArcsOptions, ICirclesOptions, ICubesOptions, IFlowerOptions };
 
 export class Wave {
     public animations = {

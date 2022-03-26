@@ -1,18 +1,6 @@
-﻿import { ILineOptions, IAnimation } from "../types";
+﻿import { IShineOptions, IAnimation } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
-
-
-/**
- * @source
- */
-interface IShineOptions extends ILineOptions {
-    count?: number;
-    diameter?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-    rotate?: number;
-    offset?: boolean;
-}
 
 /** 
  * These are the options for the Shine animation [[IShineOptions]]

@@ -1,19 +1,6 @@
-﻿import { IPolygonOptions, IAnimation } from "../types";
+﻿import { ITurntableOptions, IAnimation } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
-
-
-/**
- * @source
- */
-interface ITurntableOptions extends IPolygonOptions {
-    count?: number;
-    cubeHeight?: number;
-    diameter?: number;
-    gap?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-    rotate?: number;
-}
 
 /** 
  * These are the options for the Turntable animation [[ITurntableOptions]]

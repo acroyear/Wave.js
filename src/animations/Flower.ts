@@ -1,17 +1,8 @@
-﻿import { IPolygonOptions, IAnimation } from "../types";
+﻿import { IAnimation, IHasCount, IHasDiameter, IHasFrequency, IHasRotation, IPolygonOptions } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
 
-
-/**
- * @source
- */
-interface IFlowerOptions extends IPolygonOptions {
-    count?: number;
-    diameter?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-    rotate?: number;
-}
+export interface IFlowerOptions extends IPolygonOptions, IHasCount, IHasDiameter, IHasFrequency, IHasRotation {}
 
 /** 
  * These are the options for the Flower animation [[IFlowerOptions]]

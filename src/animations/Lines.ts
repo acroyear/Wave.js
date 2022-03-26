@@ -1,22 +1,6 @@
-import { ILineOptions, IAnimation } from "../types";
+import { ILinesOptions, IAnimation } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
-
-
-/**
- * @source
- */
-interface ILinesOptions extends ILineOptions {
-    count?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-    top?: boolean;
-    right?: boolean;
-    bottom?: boolean;
-    left?: boolean;
-    center?: boolean;
-    mirroredX?: boolean;
-    mirroredY?: boolean;
-}
 
 /** 
  * These are the options for the Lines animation [[ILinesOptions]]

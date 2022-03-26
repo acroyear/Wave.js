@@ -1,20 +1,12 @@
-﻿import { IArcOptions, ICircleOptions, IAnimation } from "../types";
+﻿import { IAnimation, IArcOptions, ICircleOptions, IHasCount, IHasDiameter, IHasFrequency } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
-
-
-/**
- * @source
- */
-interface IArcsOptions extends IArcOptions, ICircleOptions {
-    count?: number;
-    diameter?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-}
 
 /** 
  * These are the options for the Arcs animation [[IArcsOptions]]
  */
+export interface IArcsOptions extends IArcOptions, ICircleOptions, IHasCount, IHasFrequency, IHasDiameter{}
+
 export class Arcs implements IAnimation {
     private _options: IArcsOptions;
 

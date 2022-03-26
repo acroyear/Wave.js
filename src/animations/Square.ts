@@ -1,16 +1,6 @@
-﻿import { ILineOptions, IAnimation } from "../types";
+﻿import { ISquareOptions, IAnimation } from "../types";
 import { Shapes } from "../util/Shapes";
 import { AudioData } from "../util/AudioData";
-
-
-/**
- * @source
- */
-interface ISquareOptions extends ILineOptions {
-    count?: number;
-    diameter?: number;
-    frequencyBand?: "base" | "lows" | "mids" | "highs";
-}
 
 /** 
  * These are the options for the Square animation [[ISquareOptions]]
