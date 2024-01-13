@@ -1,10 +1,11 @@
 {
   "name": "@foobar404/wave",
-  "version": "2.0.1",
+  "version": "2.0.5",
   "description": "Audio visualizer library for javascript.",
   "main": "dist/bundle.js",
   "scripts": {
-    "start": "webpack",
+    "start": "webpack --watch",
+    "build": "webpack",
     "docs": "typedoc"
   },
   "keywords": [
@@ -22,13 +23,13 @@
   "files": [
     "/dist"
   ],
-  "homepage": "https://foobar404.github.io/Wave.js/#/",
+  "homepage": "https://foobar404.dev/wave.js/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/foobar404/Wave.js.git"
+    "url": "https://github.com/foobar404/wave.js.git"
   },
   "bugs": {
-    "url": "https://github.com/foobar404/Wave.js/issues"
+    "url": "https://github.com/foobar404/wave.js/issues"
   },
   "dependencies": {},
   "devDependencies": {

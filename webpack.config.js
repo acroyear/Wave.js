@@ -2,7 +2,6 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-  watch: true,
   mode: "production",
   entry: './src/index.ts',
   module: {
@@ -10,8 +9,8 @@ module.exports = {
       {
         test: /\.ts?$/,
         use: 'ts-loader',
-        exclude: /node_modules/,
-      },
+        exclude: /node_modules/
+      }
     ],
   },
   resolve: {
